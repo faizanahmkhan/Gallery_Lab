@@ -7,9 +7,6 @@ public class Artwork {
     private int price;
     private int nft;
 
-    
-
-
     public Artwork(String title, String artist, int price, int nft){
         this.title = title;
         this.artist = artist;

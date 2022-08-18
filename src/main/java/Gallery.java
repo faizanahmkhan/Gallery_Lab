@@ -3,17 +3,27 @@ import java.util.ArrayList;
 public class Gallery {
     // name, till, collection of artwork
 
-    private Gallery name;
-
+    private String name;
     private int till;
-
     private ArrayList<Artwork> artwork;
 
+
+    public Gallery(String name, int till){
+        this.name = name;
+        this.till = 0;
+    }
     public void acceptPayment(int payment) {
-        till += payment;
+        setTill(till += payment);
     }
-    public void setTill() {
+
+    public int getTill() {
+                return till;
+            }
+
+    public void setTill(int till) {
         this.till = till;
-    }
+           }
+
+
 
 }
